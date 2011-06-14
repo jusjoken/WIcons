@@ -17,29 +17,30 @@
        - works for DVD and Title views in addition to the Folders view
        - the transparent Watched icon is displayed in the top icon status area if the watched videos are filtered out of the lists
    - adds the focus indicator on video items
-   - displays Episode Name (not title or filename) in video list
+   - displays Episode Name (not title or filename) in folder list
    - displays Season and Episode numbers with Episode Name in lists and right hand info area if that Metadata exists
         - works with Multi-Column folder views
    - displays Disc number in video lists if the metadata is available
-   * Sort option enhanced for Folder and title views from video Browser Options
-    * in Title view - sort by Title, Title + Date, Date, Original Air Date, Duration and Filename
-    * in Folder view - sort by Original Air Date, Filename, Series, Date, and File Modified Date
+   - Sort option enhanced for Folder and title views from video Browser Options
+    - in Title view - sort by Title, Title + Date, Date, Original Air Date, Duration and Filename
+    - in Folder view - sort by Original Air Date, Filename, Series, Date, and File Modified Date
       (for series this is by default Title, Season Number, Episode Number and then Episode Name)
    - Video Details displays the Phoenix based Title (same as used for the sorting)
    - Video Details thumbnail is larger if video preview is set to never
-   - adds a new menu to the Video Options menu to...
+   * adds a new menu to the Options menu (menu moved in 1.23) to...
     - Show/Hide the Preview Thumb (top right)
-    * Use Fanart Thumbnails (Diamond only)
-    * Show Larger Thumbnails (Diamond only)
+    - Use Fanart Thumbnails (Diamond only)
+    - Show Larger Thumbnails (Diamond only)
     - Switch to a Large Preview Thumb (top right) (non-Diamond)
     - Include the Title with the Episode Name
+    * Always Exclude Title from Info List (right side panel) 
     - Show/Hide thumbnails for video menu items
    
   </Description>
   <Author>jusjoken</Author>
   <CreationDate>2010.07.25</CreationDate>
-  <ModificationDate>2011.06.12</ModificationDate>
-  <Version>1.22</Version>
+  <ModificationDate>2011.06.14</ModificationDate>
+  <Version>1.23</Version>
 
   <Dependency>
     <Plugin>phoenix-api</Plugin>
@@ -58,7 +59,7 @@
 <Package>
   <PackageType>STVI</PackageType>
   <Location>http://jusjoken-sagetv.googlecode.com/files/CVF.zip</Location>
-  <MD5>263c7b0dd16bb4060d6c844d1f08960b</MD5>
+  <MD5>efb18e1cd946d622cc8e4e70998379ee</MD5>
 </Package>
 
 <Screenshot>http://dl.dropbox.com/u/7826058/CVF_Watched_LargePreview_RemovedThumbs.PNG</Screenshot>
@@ -69,6 +70,11 @@
 <Screenshot>http://dl.dropbox.com/u/7826058/CVF_WatchedOptions.PNG</Screenshot>
   
 <ReleaseNotes>
+Version 1.23 - Right side Info List updated to handle Title/Episode changes in SageTV beta 7.1.8
+               - default: if Title matches Folder name then Title is not shown
+               - new option to Always Exclude Title from Info List
+             - CVF Options moved to Options Menu (below Menu Options) and removed from Menu Options
+             - Fixed some BD/DVD naming issues
 Version 1.22 - Fix to support new Title/Episode field changes in SageTV beta 7.1.8
              - note: if Episode name is different from Title then both are shown
              - Fix for SE sorts that changed with SageTV beta 7.1.8
