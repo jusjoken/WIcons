@@ -15,7 +15,7 @@ import sagex.UIContext;
  */
 public class Icons {
 
-    
+    //Version 1.003 - 2011-12-18 - added a missing icon and changed NWS to return night icon for "n" forecast strings
     public static final String OptionNotFound = "Option not Found";
     public static final String WIconProp = "WIcons/";
     public static Map<String,String> IconsForDaytime = new HashMap<String, String>();
