@@ -16,6 +16,7 @@ import sagex.UIContext;
 public class Icons {
 
     //Version 1.003 - 2011-12-18 - added a missing icon and changed NWS to return night icon for "n" forecast strings
+    //Version 1.004 - 2012-07-03 - added a few icons AND now supports png URL icons passed in from NWS
     public static final String OptionNotFound = "Option not Found";
     public static final String WIconProp = "WIcons/";
     public static Map<String,String> IconsForDaytime = new HashMap<String, String>();
@@ -68,6 +69,8 @@ public class Icons {
         AddIcon("tsra", "35", "35");
         AddIcon("nscttsra", "35", "35");
         AddIcon("scttsra", "35", "35");
+        AddIcon("hi_tsra", "37", "37");
+        AddIcon("hi_ntsra", "47", "47");
         AddIcon("nwind", "24", "24");
         AddIcon("wind", "23", "24");
         AddIcon("nfg", "20", "20");
@@ -98,6 +101,7 @@ public class Icons {
             Condition = ConditionURL.substring(tIcon+1);
             Condition = Condition.replaceAll(".gif", "");
             Condition = Condition.replaceAll(".jpg", "");
+            Condition = Condition.replaceAll(".png", "");
             //remove any % that are part of the image string
             if (Condition.contains("0")){
                 Condition = Condition.replaceAll("10", "");
