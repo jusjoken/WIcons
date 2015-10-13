@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module xmlns="urn:tv.sage/stv" Name="default" PersistentPrimaryRefs="true">
+ <Hook Name="STVImported" Sym="JUSJOKEN-4892418">
+  <Action Name="&quot;REM Deletion of Widgets&quot;" Sym="JUSJOKEN-4892419"/>
+  <Action Name="&quot;REM Renaming of Widgets&quot;" Sym="JUSJOKEN-4892420">
+   <Conditional Name="Widg = FindWidgetBySymbol(&quot;OPUS4A-220908&quot;)" Sym="JUSJOKEN-4892467">
+    <Branch Name="else" Sym="JUSJOKEN-4892468">
+     <Action Name="SetWidgetName(Widg, &quot;WIcons_Icons_GetWeatherIconURLDay(sage_google_weather_GoogleWeather_getGWForecastCondition(GoogleWeatherInstance, ForecastDay, \&quot;iconURL\&quot;))&quot;)" Sym="JUSJOKEN-4892470"/>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892469">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=OPUS4A-220908 Could not rename from: \&quot;sage_google_weather_GoogleWeather_getGWForecastCondition(GoogleWeatherInstance, ForecastDay, \&quot;iconURL\&quot;)\&quot; to: \&quot;WIcons_Icons_GetWeatherIconURLDay(sage_google_weather_GoogleWeather_getGWForecastCondition(GoogleWeatherInstance, ForecastDay, \&quot;iconURL\&quot;))\&quot;&quot;)" Sym="JUSJOKEN-4892471"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg = FindWidgetBySymbol(&quot;OPUS4A-220877&quot;)" Sym="JUSJOKEN-4892472">
+    <Branch Name="else" Sym="JUSJOKEN-4892473">
+     <Action Name="SetWidgetName(Widg, &quot;WIcons_Icons_GetWeatherIconURL(sage_google_weather_GoogleWeather_getGWCurrentCondition(GoogleWeatherInstance, \&quot;iconURL\&quot;))&quot;)" Sym="JUSJOKEN-4892475"/>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892474">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=OPUS4A-220877 Could not rename from: \&quot;sage_google_weather_GoogleWeather_getGWCurrentCondition(GoogleWeatherInstance, \&quot;iconURL\&quot;)\&quot; to: \&quot;WIcons_Icons_GetWeatherIconURL(sage_google_weather_GoogleWeather_getGWCurrentCondition(GoogleWeatherInstance, \&quot;iconURL\&quot;))\&quot;&quot;)" Sym="JUSJOKEN-4892476"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg = FindWidgetBySymbol(&quot;OPUS4A-174897&quot;)" Sym="JUSJOKEN-4892477">
+    <Branch Name="else" Sym="JUSJOKEN-4892478">
+     <Action Name="SetWidgetName(Widg, &quot;WIcons_Icons_GetWeatherIconURL(sage_google_weather_GoogleWeather_getGWCurrentCondition(GoogleWeatherInstance, \&quot;iconURL\&quot;))&quot;)" Sym="JUSJOKEN-4892480"/>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892479">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=OPUS4A-174897 Could not rename from: \&quot;sage_google_weather_GoogleWeather_getGWCurrentCondition(GoogleWeatherInstance, \&quot;iconURL\&quot;)\&quot; to: \&quot;WIcons_Icons_GetWeatherIconURL(sage_google_weather_GoogleWeather_getGWCurrentCondition(GoogleWeatherInstance, \&quot;iconURL\&quot;))\&quot;&quot;)" Sym="JUSJOKEN-4892481"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg = FindWidgetBySymbol(&quot;OPUS4A-220992&quot;)" Sym="JUSJOKEN-4892482">
+    <Branch Name="else" Sym="JUSJOKEN-4892483">
+     <Action Name="SetWidgetName(Widg, &quot;WIcons_Icons_GetWeatherIconURLDay(sage_google_weather_GoogleWeather_getNWSForecastCondition(GoogleWeatherInstance,ForecastPeriod,\&quot;icon_url\&quot;))&quot;)" Sym="JUSJOKEN-4892485"/>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892484">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=OPUS4A-220992 Could not rename from: \&quot;sage_google_weather_GoogleWeather_getNWSForecastCondition(GoogleWeatherInstance,ForecastPeriod,\&quot;icon_url\&quot;)\&quot; to: \&quot;WIcons_Icons_GetWeatherIconURLDay(sage_google_weather_GoogleWeather_getNWSForecastCondition(GoogleWeatherInstance,ForecastPeriod,\&quot;icon_url\&quot;))\&quot;&quot;)" Sym="JUSJOKEN-4892486"/>
+    </Branch>
+   </Conditional>
+  </Action>
+  <Action Name="&quot;REM Resetting of Widget properties&quot;" Sym="JUSJOKEN-4892421">
+   <Conditional Name="Widg = FindWidgetBySymbol(&quot;BASE-83141&quot;)" Sym="JUSJOKEN-4892434">
+    <Branch Name="else" Sym="JUSJOKEN-4892435">
+     <Action Name="SetWidgetProperty(Widg, &quot;PadY&quot;, &quot;.03&quot;)" Sym="JUSJOKEN-4892437"/>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892436">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=BASE-83141 could not change property PadY from: \&quot;.04\&quot; to: \&quot;.03\&quot;&quot;)" Sym="JUSJOKEN-4892438"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg = FindWidgetBySymbol(&quot;BASE-83141&quot;)" Sym="JUSJOKEN-4892439">
+    <Branch Name="else" Sym="JUSJOKEN-4892440">
+     <Action Name="SetWidgetProperty(Widg, &quot;BackgroundComponent&quot;, &quot;false&quot;)" Sym="JUSJOKEN-4892442"/>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892441">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=BASE-83141 could not change property BackgroundComponent from: \&quot;\&quot; to: \&quot;false\&quot;&quot;)" Sym="JUSJOKEN-4892443"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg = FindWidgetBySymbol(&quot;BASE-83141&quot;)" Sym="JUSJOKEN-4892444">
+    <Branch Name="else" Sym="JUSJOKEN-4892445">
+     <Action Name="SetWidgetProperty(Widg, &quot;MouseTransparency&quot;, &quot;false&quot;)" Sym="JUSJOKEN-4892447"/>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892446">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=BASE-83141 could not change property MouseTransparency from: \&quot;\&quot; to: \&quot;false\&quot;&quot;)" Sym="JUSJOKEN-4892448"/>
+    </Branch>
+   </Conditional>
+  </Action>
+  <Action Name="&quot;REM Removal of Widget children relationships&quot;" Sym="JUSJOKEN-4892422"/>
+  <Action Name="&quot;REM Adding of Widget children relationships&quot;" Sym="JUSJOKEN-4892423">
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;BASE-83122&quot;)" Sym="JUSJOKEN-4892425">
+    <Branch Name="else" Sym="JUSJOKEN-4892426">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891535&quot;)" Sym="JUSJOKEN-4892429">
+      <Branch Name="else" Sym="JUSJOKEN-4892430">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892433"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892431">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891535 \&quot;OptionSetting\&quot; could not add as child; parent symbol=BASE-83122 \&quot;\&quot;XHours\&quot;\&quot;&quot;)" Sym="JUSJOKEN-4892432"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892427">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=BASE-83122 \&quot;OptionSetting\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891535 \&quot;\&quot;XHours\&quot;\&quot;&quot;)" Sym="JUSJOKEN-4892428"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;BASE-83141&quot;)" Sym="JUSJOKEN-4892449">
+    <Branch Name="else" Sym="JUSJOKEN-4892450">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891525&quot;)" Sym="JUSJOKEN-4892453">
+      <Branch Name="else" Sym="JUSJOKEN-4892454">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892457"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892455">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891525 \&quot;MenuItems\&quot; could not add as child; parent symbol=BASE-83141 \&quot;Configure the weather Day Start/End Hours\&quot;&quot;)" Sym="JUSJOKEN-4892456"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892451">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=BASE-83141 \&quot;MenuItems\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891525 \&quot;Configure the weather Day Start/End Hours\&quot;&quot;)" Sym="JUSJOKEN-4892452"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;BASE-83141&quot;)" Sym="JUSJOKEN-4892458">
+    <Branch Name="else" Sym="JUSJOKEN-4892459">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891525&quot;)" Sym="JUSJOKEN-4892462">
+      <Branch Name="else" Sym="JUSJOKEN-4892463">
+       <Action Name="InsertWidgetChild(Widg1, Widg2, 4)" Sym="JUSJOKEN-4892466"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892464">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891525 \&quot;MenuItems\&quot; could not move child; parent symbol=BASE-83141 \&quot;Configure the weather Day Start/End Hours\&quot;&quot;)" Sym="JUSJOKEN-4892465"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892460">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=BASE-83141 \&quot;MenuItems\&quot; missing parent; could not move child with symbol=JUSJOKEN-4891525 \&quot;Configure the weather Day Start/End Hours\&quot;&quot;)" Sym="JUSJOKEN-4892461"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891525&quot;)" Sym="JUSJOKEN-4892487">
+    <Branch Name="else" Sym="JUSJOKEN-4892488">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891526&quot;)" Sym="JUSJOKEN-4892491">
+      <Branch Name="else" Sym="JUSJOKEN-4892492">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892495"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892493">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891526 \&quot;Configure the weather Day Start/End Hours\&quot; could not add as child; parent symbol=JUSJOKEN-4891525 \&quot;OptionSetting\&quot;&quot;)" Sym="JUSJOKEN-4892494"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892489">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891525 \&quot;Configure the weather Day Start/End Hours\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891526 \&quot;OptionSetting\&quot;&quot;)" Sym="JUSJOKEN-4892490"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891525&quot;)" Sym="JUSJOKEN-4892496">
+    <Branch Name="else" Sym="JUSJOKEN-4892497">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891527&quot;)" Sym="JUSJOKEN-4892500">
+      <Branch Name="else" Sym="JUSJOKEN-4892501">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892504"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892502">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891527 \&quot;Configure the weather Day Start/End Hours\&quot; could not add as child; parent symbol=JUSJOKEN-4891525 \&quot;\&quot;REM Set the weather report units\&quot;\&quot;&quot;)" Sym="JUSJOKEN-4892503"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892498">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891525 \&quot;Configure the weather Day Start/End Hours\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891527 \&quot;\&quot;REM Set the weather report units\&quot;\&quot;&quot;)" Sym="JUSJOKEN-4892499"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891527&quot;)" Sym="JUSJOKEN-4892505">
+    <Branch Name="else" Sym="JUSJOKEN-4892506">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891591&quot;)" Sym="JUSJOKEN-4892509">
+      <Branch Name="else" Sym="JUSJOKEN-4892510">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892513"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892511">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891591 \&quot;\&quot;REM Set the weather report units\&quot;\&quot; could not add as child; parent symbol=JUSJOKEN-4891527 \&quot;Select Day Start/End Hours\&quot;&quot;)" Sym="JUSJOKEN-4892512"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892507">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891527 \&quot;\&quot;REM Set the weather report units\&quot;\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891591 \&quot;Select Day Start/End Hours\&quot;&quot;)" Sym="JUSJOKEN-4892508"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891535&quot;)" Sym="JUSJOKEN-4892514">
+    <Branch Name="else" Sym="JUSJOKEN-4892515">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891536&quot;)" Sym="JUSJOKEN-4892518">
+      <Branch Name="else" Sym="JUSJOKEN-4892519">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892522"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892520">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891536 \&quot;\&quot;XHours\&quot;\&quot; could not add as child; parent symbol=JUSJOKEN-4891535 \&quot;Configure the start and end hours for the Day/Night Icons\&quot;&quot;)" Sym="JUSJOKEN-4892521"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892516">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891535 \&quot;\&quot;XHours\&quot;\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891536 \&quot;Configure the start and end hours for the Day/Night Icons\&quot;&quot;)" Sym="JUSJOKEN-4892517"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891537&quot;)" Sym="JUSJOKEN-4892523">
+    <Branch Name="else" Sym="JUSJOKEN-4892524">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891564&quot;)" Sym="JUSJOKEN-4892527">
+      <Branch Name="else" Sym="JUSJOKEN-4892528">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892531"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892529">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891564 \&quot;\&quot;\\n \\n\&quot;\&quot; could not add as child; parent symbol=JUSJOKEN-4891537 \&quot;\&quot;&quot;)" Sym="JUSJOKEN-4892530"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892525">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891537 \&quot;\&quot;\\n \\n\&quot;\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891564 \&quot;\&quot;&quot;)" Sym="JUSJOKEN-4892526"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891561&quot;)" Sym="JUSJOKEN-4892532">
+    <Branch Name="else" Sym="JUSJOKEN-4892533">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891597&quot;)" Sym="JUSJOKEN-4892536">
+      <Branch Name="else" Sym="JUSJOKEN-4892537">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892540"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892538">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891597 \&quot;Title = DialogTitle\&quot; could not add as child; parent symbol=JUSJOKEN-4891561 \&quot;NewNum = GetProperty(\&quot;WIcons/DayStartHour\&quot;, 7) * 1\&quot;&quot;)" Sym="JUSJOKEN-4892539"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892534">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891561 \&quot;Title = DialogTitle\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891597 \&quot;NewNum = GetProperty(\&quot;WIcons/DayStartHour\&quot;, 7) * 1\&quot;&quot;)" Sym="JUSJOKEN-4892535"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891562&quot;)" Sym="JUSJOKEN-4892541">
+    <Branch Name="else" Sym="JUSJOKEN-4892542">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891574&quot;)" Sym="JUSJOKEN-4892545">
+      <Branch Name="else" Sym="JUSJOKEN-4892546">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892549"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892547">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891574 \&quot;NewNum &gt;=1 &amp;&amp; NewNum &lt;=11\&quot; could not add as child; parent symbol=JUSJOKEN-4891562 \&quot;SetProperty(\&quot;WIcons/DayStartHour\&quot;, NewNum * 1)\&quot;&quot;)" Sym="JUSJOKEN-4892548"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892543">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891562 \&quot;NewNum &gt;=1 &amp;&amp; NewNum &lt;=11\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891574 \&quot;SetProperty(\&quot;WIcons/DayStartHour\&quot;, NewNum * 1)\&quot;&quot;)" Sym="JUSJOKEN-4892544"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891573&quot;)" Sym="JUSJOKEN-4892550">
+    <Branch Name="else" Sym="JUSJOKEN-4892551">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891596&quot;)" Sym="JUSJOKEN-4892554">
+      <Branch Name="else" Sym="JUSJOKEN-4892555">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892558"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892556">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891596 \&quot;DayStart\&quot; could not add as child; parent symbol=JUSJOKEN-4891573 \&quot;GetProperty(\&quot;WIcons/DayStartHour\&quot;, 7) * 1\&quot;&quot;)" Sym="JUSJOKEN-4892557"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892552">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891573 \&quot;DayStart\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891596 \&quot;GetProperty(\&quot;WIcons/DayStartHour\&quot;, 7) * 1\&quot;&quot;)" Sym="JUSJOKEN-4892553"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891573&quot;)" Sym="JUSJOKEN-4892559">
+    <Branch Name="else" Sym="JUSJOKEN-4892560">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891561&quot;)" Sym="JUSJOKEN-4892563">
+      <Branch Name="else" Sym="JUSJOKEN-4892564">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892567"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892565">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891561 \&quot;DayStart\&quot; could not add as child; parent symbol=JUSJOKEN-4891573 \&quot;Title = DialogTitle\&quot;&quot;)" Sym="JUSJOKEN-4892566"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892561">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891573 \&quot;DayStart\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891561 \&quot;Title = DialogTitle\&quot;&quot;)" Sym="JUSJOKEN-4892562"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891573&quot;)" Sym="JUSJOKEN-4892568">
+    <Branch Name="else" Sym="JUSJOKEN-4892569">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891541&quot;)" Sym="JUSJOKEN-4892572">
+      <Branch Name="else" Sym="JUSJOKEN-4892573">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892576"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892574">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891541 \&quot;DayStart\&quot; could not add as child; parent symbol=JUSJOKEN-4891573 \&quot;DialogTitle\&quot;&quot;)" Sym="JUSJOKEN-4892575"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892570">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891573 \&quot;DayStart\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891541 \&quot;DialogTitle\&quot;&quot;)" Sym="JUSJOKEN-4892571"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891574&quot;)" Sym="JUSJOKEN-4892577">
+    <Branch Name="else" Sym="JUSJOKEN-4892578">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891549&quot;)" Sym="JUSJOKEN-4892581">
+      <Branch Name="else" Sym="JUSJOKEN-4892582">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892585"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892583">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891549 \&quot;SetProperty(\&quot;WIcons/DayStartHour\&quot;, NewNum * 1)\&quot; could not add as child; parent symbol=JUSJOKEN-4891574 \&quot;Refresh()\&quot;&quot;)" Sym="JUSJOKEN-4892584"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892579">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891574 \&quot;SetProperty(\&quot;WIcons/DayStartHour\&quot;, NewNum * 1)\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891549 \&quot;Refresh()\&quot;&quot;)" Sym="JUSJOKEN-4892580"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891575&quot;)" Sym="JUSJOKEN-4892586">
+    <Branch Name="else" Sym="JUSJOKEN-4892587">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891577&quot;)" Sym="JUSJOKEN-4892590">
+      <Branch Name="else" Sym="JUSJOKEN-4892591">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892594"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892592">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891577 \&quot;DayStart\&quot; could not add as child; parent symbol=JUSJOKEN-4891575 \&quot;Day Start Hour\&quot;&quot;)" Sym="JUSJOKEN-4892593"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892588">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891575 \&quot;DayStart\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891577 \&quot;Day Start Hour\&quot;&quot;)" Sym="JUSJOKEN-4892589"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891575&quot;)" Sym="JUSJOKEN-4892595">
+    <Branch Name="else" Sym="JUSJOKEN-4892596">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891573&quot;)" Sym="JUSJOKEN-4892599">
+      <Branch Name="else" Sym="JUSJOKEN-4892600">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892603"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892601">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891573 \&quot;DayStart\&quot; could not add as child; parent symbol=JUSJOKEN-4891575 \&quot;DayStart\&quot;&quot;)" Sym="JUSJOKEN-4892602"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892597">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891575 \&quot;DayStart\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891573 \&quot;DayStart\&quot;&quot;)" Sym="JUSJOKEN-4892598"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891575&quot;)" Sym="JUSJOKEN-4892604">
+    <Branch Name="else" Sym="JUSJOKEN-4892605">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;BASE-56765&quot;)" Sym="JUSJOKEN-4892608">
+      <Branch Name="else" Sym="JUSJOKEN-4892609">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892612"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892610">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=BASE-56765 \&quot;DayStart\&quot; could not add as child; parent symbol=JUSJOKEN-4891575 \&quot;WideLeftRowPanelTheme2 Wide Button\&quot;&quot;)" Sym="JUSJOKEN-4892611"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892606">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891575 \&quot;DayStart\&quot; missing parent; could not add child with symbol=BASE-56765 \&quot;WideLeftRowPanelTheme2 Wide Button\&quot;&quot;)" Sym="JUSJOKEN-4892607"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891582&quot;)" Sym="JUSJOKEN-4892613">
+    <Branch Name="else" Sym="JUSJOKEN-4892614">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891599&quot;)" Sym="JUSJOKEN-4892617">
+      <Branch Name="else" Sym="JUSJOKEN-4892618">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892621"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892619">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891599 \&quot;Close\&quot; could not add as child; parent symbol=JUSJOKEN-4891582 \&quot;CloseOptionsMenu()\&quot;&quot;)" Sym="JUSJOKEN-4892620"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892615">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891582 \&quot;Close\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891599 \&quot;CloseOptionsMenu()\&quot;&quot;)" Sym="JUSJOKEN-4892616"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891589&quot;)" Sym="JUSJOKEN-4892622">
+    <Branch Name="else" Sym="JUSJOKEN-4892623">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891600&quot;)" Sym="JUSJOKEN-4892626">
+      <Branch Name="else" Sym="JUSJOKEN-4892627">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892630"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892628">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891600 \&quot;\&quot;Set the Start and End Hours for the Day Icons to show:\\n \\n\&quot;\&quot; could not add as child; parent symbol=JUSJOKEN-4891589 \&quot;\&quot;&quot;)" Sym="JUSJOKEN-4892629"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892624">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891589 \&quot;\&quot;Set the Start and End Hours for the Day Icons to show:\\n \\n\&quot;\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891600 \&quot;\&quot;&quot;)" Sym="JUSJOKEN-4892625"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891591&quot;)" Sym="JUSJOKEN-4892631">
+    <Branch Name="else" Sym="JUSJOKEN-4892632">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891589&quot;)" Sym="JUSJOKEN-4892635">
+      <Branch Name="else" Sym="JUSJOKEN-4892636">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892639"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892637">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891589 \&quot;Select Day Start/End Hours\&quot; could not add as child; parent symbol=JUSJOKEN-4891591 \&quot;\&quot;Set the Start and End Hours for the Day Icons to show:\\n \\n\&quot;\&quot;&quot;)" Sym="JUSJOKEN-4892638"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892633">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891591 \&quot;Select Day Start/End Hours\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891589 \&quot;\&quot;Set the Start and End Hours for the Day Icons to show:\\n \\n\&quot;\&quot;&quot;)" Sym="JUSJOKEN-4892634"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891591&quot;)" Sym="JUSJOKEN-4892640">
+    <Branch Name="else" Sym="JUSJOKEN-4892641">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891575&quot;)" Sym="JUSJOKEN-4892644">
+      <Branch Name="else" Sym="JUSJOKEN-4892645">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892648"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892646">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891575 \&quot;Select Day Start/End Hours\&quot; could not add as child; parent symbol=JUSJOKEN-4891591 \&quot;DayStart\&quot;&quot;)" Sym="JUSJOKEN-4892647"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892642">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891591 \&quot;Select Day Start/End Hours\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891575 \&quot;DayStart\&quot;&quot;)" Sym="JUSJOKEN-4892643"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891591&quot;)" Sym="JUSJOKEN-4892649">
+    <Branch Name="else" Sym="JUSJOKEN-4892650">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891607&quot;)" Sym="JUSJOKEN-4892653">
+      <Branch Name="else" Sym="JUSJOKEN-4892654">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892657"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892655">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891607 \&quot;Select Day Start/End Hours\&quot; could not add as child; parent symbol=JUSJOKEN-4891591 \&quot;DayEnd\&quot;&quot;)" Sym="JUSJOKEN-4892656"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892651">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891591 \&quot;Select Day Start/End Hours\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891607 \&quot;DayEnd\&quot;&quot;)" Sym="JUSJOKEN-4892652"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891591&quot;)" Sym="JUSJOKEN-4892658">
+    <Branch Name="else" Sym="JUSJOKEN-4892659">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891537&quot;)" Sym="JUSJOKEN-4892662">
+      <Branch Name="else" Sym="JUSJOKEN-4892663">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892666"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892664">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891537 \&quot;Select Day Start/End Hours\&quot; could not add as child; parent symbol=JUSJOKEN-4891591 \&quot;\&quot;\\n \\n\&quot;\&quot;&quot;)" Sym="JUSJOKEN-4892665"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892660">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891591 \&quot;Select Day Start/End Hours\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891537 \&quot;\&quot;\\n \\n\&quot;\&quot;&quot;)" Sym="JUSJOKEN-4892661"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891591&quot;)" Sym="JUSJOKEN-4892667">
+    <Branch Name="else" Sym="JUSJOKEN-4892668">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891582&quot;)" Sym="JUSJOKEN-4892671">
+      <Branch Name="else" Sym="JUSJOKEN-4892672">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892675"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892673">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891582 \&quot;Select Day Start/End Hours\&quot; could not add as child; parent symbol=JUSJOKEN-4891591 \&quot;Close\&quot;&quot;)" Sym="JUSJOKEN-4892674"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892669">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891591 \&quot;Select Day Start/End Hours\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891582 \&quot;Close\&quot;&quot;)" Sym="JUSJOKEN-4892670"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891591&quot;)" Sym="JUSJOKEN-4892676">
+    <Branch Name="else" Sym="JUSJOKEN-4892677">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;BASE-45634&quot;)" Sym="JUSJOKEN-4892680">
+      <Branch Name="else" Sym="JUSJOKEN-4892681">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892684"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892682">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=BASE-45634 \&quot;Select Day Start/End Hours\&quot; could not add as child; parent symbol=JUSJOKEN-4891591 \&quot;MutliSelectOptionsTheme\&quot;&quot;)" Sym="JUSJOKEN-4892683"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892678">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891591 \&quot;Select Day Start/End Hours\&quot; missing parent; could not add child with symbol=BASE-45634 \&quot;MutliSelectOptionsTheme\&quot;&quot;)" Sym="JUSJOKEN-4892679"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891596&quot;)" Sym="JUSJOKEN-4892685">
+    <Branch Name="else" Sym="JUSJOKEN-4892686">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891551&quot;)" Sym="JUSJOKEN-4892689">
+      <Branch Name="else" Sym="JUSJOKEN-4892690">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892693"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892691">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891551 \&quot;GetProperty(\&quot;WIcons/DayStartHour\&quot;, 7) * 1\&quot; could not add as child; parent symbol=JUSJOKEN-4891596 \&quot;\&quot;&quot;)" Sym="JUSJOKEN-4892692"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892687">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891596 \&quot;GetProperty(\&quot;WIcons/DayStartHour\&quot;, 7) * 1\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891551 \&quot;\&quot;&quot;)" Sym="JUSJOKEN-4892688"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891597&quot;)" Sym="JUSJOKEN-4892694">
+    <Branch Name="else" Sym="JUSJOKEN-4892695">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;BASE-50762&quot;)" Sym="JUSJOKEN-4892698">
+      <Branch Name="else" Sym="JUSJOKEN-4892699">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892702"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892700">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=BASE-50762 \&quot;NewNum = GetProperty(\&quot;WIcons/DayStartHour\&quot;, 7) * 1\&quot; could not add as child; parent symbol=JUSJOKEN-4891597 \&quot;GetNewNum (NonZero Integer)\&quot;&quot;)" Sym="JUSJOKEN-4892701"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892696">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891597 \&quot;NewNum = GetProperty(\&quot;WIcons/DayStartHour\&quot;, 7) * 1\&quot; missing parent; could not add child with symbol=BASE-50762 \&quot;GetNewNum (NonZero Integer)\&quot;&quot;)" Sym="JUSJOKEN-4892697"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891597&quot;)" Sym="JUSJOKEN-4892703">
+    <Branch Name="else" Sym="JUSJOKEN-4892704">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891562&quot;)" Sym="JUSJOKEN-4892707">
+      <Branch Name="else" Sym="JUSJOKEN-4892708">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892711"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892709">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891562 \&quot;NewNum = GetProperty(\&quot;WIcons/DayStartHour\&quot;, 7) * 1\&quot; could not add as child; parent symbol=JUSJOKEN-4891597 \&quot;NewNum &gt;=1 &amp;&amp; NewNum &lt;=11\&quot;&quot;)" Sym="JUSJOKEN-4892710"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892705">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891597 \&quot;NewNum = GetProperty(\&quot;WIcons/DayStartHour\&quot;, 7) * 1\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891562 \&quot;NewNum &gt;=1 &amp;&amp; NewNum &lt;=11\&quot;&quot;)" Sym="JUSJOKEN-4892706"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891602&quot;)" Sym="JUSJOKEN-4892712">
+    <Branch Name="else" Sym="JUSJOKEN-4892713">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891610&quot;)" Sym="JUSJOKEN-4892716">
+      <Branch Name="else" Sym="JUSJOKEN-4892717">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892720"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892718">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891610 \&quot;DayEnd\&quot; could not add as child; parent symbol=JUSJOKEN-4891602 \&quot;GetProperty(\&quot;WIcons/DayEndHour\&quot;, 19) * 1\&quot;&quot;)" Sym="JUSJOKEN-4892719"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892714">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891602 \&quot;DayEnd\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891610 \&quot;GetProperty(\&quot;WIcons/DayEndHour\&quot;, 19) * 1\&quot;&quot;)" Sym="JUSJOKEN-4892715"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891602&quot;)" Sym="JUSJOKEN-4892721">
+    <Branch Name="else" Sym="JUSJOKEN-4892722">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891605&quot;)" Sym="JUSJOKEN-4892725">
+      <Branch Name="else" Sym="JUSJOKEN-4892726">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892729"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892727">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891605 \&quot;DayEnd\&quot; could not add as child; parent symbol=JUSJOKEN-4891602 \&quot;Title = DialogTitle\&quot;&quot;)" Sym="JUSJOKEN-4892728"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892723">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891602 \&quot;DayEnd\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891605 \&quot;Title = DialogTitle\&quot;&quot;)" Sym="JUSJOKEN-4892724"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891602&quot;)" Sym="JUSJOKEN-4892730">
+    <Branch Name="else" Sym="JUSJOKEN-4892731">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891601&quot;)" Sym="JUSJOKEN-4892734">
+      <Branch Name="else" Sym="JUSJOKEN-4892735">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892738"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892736">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891601 \&quot;DayEnd\&quot; could not add as child; parent symbol=JUSJOKEN-4891602 \&quot;DialogTitle\&quot;&quot;)" Sym="JUSJOKEN-4892737"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892732">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891602 \&quot;DayEnd\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891601 \&quot;DialogTitle\&quot;&quot;)" Sym="JUSJOKEN-4892733"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891604&quot;)" Sym="JUSJOKEN-4892739">
+    <Branch Name="else" Sym="JUSJOKEN-4892740">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891608&quot;)" Sym="JUSJOKEN-4892743">
+      <Branch Name="else" Sym="JUSJOKEN-4892744">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892747"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892745">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891608 \&quot;SetProperty(\&quot;WIcons/DayEndHour\&quot;, NewNum * 1)\&quot; could not add as child; parent symbol=JUSJOKEN-4891604 \&quot;Refresh()\&quot;&quot;)" Sym="JUSJOKEN-4892746"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892741">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891604 \&quot;SetProperty(\&quot;WIcons/DayEndHour\&quot;, NewNum * 1)\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891608 \&quot;Refresh()\&quot;&quot;)" Sym="JUSJOKEN-4892742"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891605&quot;)" Sym="JUSJOKEN-4892748">
+    <Branch Name="else" Sym="JUSJOKEN-4892749">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891606&quot;)" Sym="JUSJOKEN-4892752">
+      <Branch Name="else" Sym="JUSJOKEN-4892753">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892756"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892754">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891606 \&quot;Title = DialogTitle\&quot; could not add as child; parent symbol=JUSJOKEN-4891605 \&quot;NewNum = GetProperty(\&quot;WIcons/DayEndHour\&quot;, 19) * 1\&quot;&quot;)" Sym="JUSJOKEN-4892755"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892750">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891605 \&quot;Title = DialogTitle\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891606 \&quot;NewNum = GetProperty(\&quot;WIcons/DayEndHour\&quot;, 19) * 1\&quot;&quot;)" Sym="JUSJOKEN-4892751"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891606&quot;)" Sym="JUSJOKEN-4892757">
+    <Branch Name="else" Sym="JUSJOKEN-4892758">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;BASE-50762&quot;)" Sym="JUSJOKEN-4892761">
+      <Branch Name="else" Sym="JUSJOKEN-4892762">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892765"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892763">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=BASE-50762 \&quot;NewNum = GetProperty(\&quot;WIcons/DayEndHour\&quot;, 19) * 1\&quot; could not add as child; parent symbol=JUSJOKEN-4891606 \&quot;GetNewNum (NonZero Integer)\&quot;&quot;)" Sym="JUSJOKEN-4892764"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892759">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891606 \&quot;NewNum = GetProperty(\&quot;WIcons/DayEndHour\&quot;, 19) * 1\&quot; missing parent; could not add child with symbol=BASE-50762 \&quot;GetNewNum (NonZero Integer)\&quot;&quot;)" Sym="JUSJOKEN-4892760"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891606&quot;)" Sym="JUSJOKEN-4892766">
+    <Branch Name="else" Sym="JUSJOKEN-4892767">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891611&quot;)" Sym="JUSJOKEN-4892770">
+      <Branch Name="else" Sym="JUSJOKEN-4892771">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892774"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892772">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891611 \&quot;NewNum = GetProperty(\&quot;WIcons/DayEndHour\&quot;, 19) * 1\&quot; could not add as child; parent symbol=JUSJOKEN-4891606 \&quot;NewNum &gt;=13 &amp;&amp; NewNum &lt;=23\&quot;&quot;)" Sym="JUSJOKEN-4892773"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892768">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891606 \&quot;NewNum = GetProperty(\&quot;WIcons/DayEndHour\&quot;, 19) * 1\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891611 \&quot;NewNum &gt;=13 &amp;&amp; NewNum &lt;=23\&quot;&quot;)" Sym="JUSJOKEN-4892769"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891607&quot;)" Sym="JUSJOKEN-4892775">
+    <Branch Name="else" Sym="JUSJOKEN-4892776">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891603&quot;)" Sym="JUSJOKEN-4892779">
+      <Branch Name="else" Sym="JUSJOKEN-4892780">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892783"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892781">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891603 \&quot;DayEnd\&quot; could not add as child; parent symbol=JUSJOKEN-4891607 \&quot;Day End Hour\&quot;&quot;)" Sym="JUSJOKEN-4892782"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892777">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891607 \&quot;DayEnd\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891603 \&quot;Day End Hour\&quot;&quot;)" Sym="JUSJOKEN-4892778"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891607&quot;)" Sym="JUSJOKEN-4892784">
+    <Branch Name="else" Sym="JUSJOKEN-4892785">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891602&quot;)" Sym="JUSJOKEN-4892788">
+      <Branch Name="else" Sym="JUSJOKEN-4892789">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892792"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892790">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891602 \&quot;DayEnd\&quot; could not add as child; parent symbol=JUSJOKEN-4891607 \&quot;DayEnd\&quot;&quot;)" Sym="JUSJOKEN-4892791"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892786">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891607 \&quot;DayEnd\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891602 \&quot;DayEnd\&quot;&quot;)" Sym="JUSJOKEN-4892787"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891607&quot;)" Sym="JUSJOKEN-4892793">
+    <Branch Name="else" Sym="JUSJOKEN-4892794">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;BASE-56765&quot;)" Sym="JUSJOKEN-4892797">
+      <Branch Name="else" Sym="JUSJOKEN-4892798">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892801"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892799">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=BASE-56765 \&quot;DayEnd\&quot; could not add as child; parent symbol=JUSJOKEN-4891607 \&quot;WideLeftRowPanelTheme2 Wide Button\&quot;&quot;)" Sym="JUSJOKEN-4892800"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892795">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891607 \&quot;DayEnd\&quot; missing parent; could not add child with symbol=BASE-56765 \&quot;WideLeftRowPanelTheme2 Wide Button\&quot;&quot;)" Sym="JUSJOKEN-4892796"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891610&quot;)" Sym="JUSJOKEN-4892802">
+    <Branch Name="else" Sym="JUSJOKEN-4892803">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891609&quot;)" Sym="JUSJOKEN-4892806">
+      <Branch Name="else" Sym="JUSJOKEN-4892807">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892810"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892808">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891609 \&quot;GetProperty(\&quot;WIcons/DayEndHour\&quot;, 19) * 1\&quot; could not add as child; parent symbol=JUSJOKEN-4891610 \&quot;\&quot;&quot;)" Sym="JUSJOKEN-4892809"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892804">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891610 \&quot;GetProperty(\&quot;WIcons/DayEndHour\&quot;, 19) * 1\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891609 \&quot;\&quot;&quot;)" Sym="JUSJOKEN-4892805"/>
+    </Branch>
+   </Conditional>
+   <Conditional Name="Widg1 = FindWidgetBySymbol(&quot;JUSJOKEN-4891611&quot;)" Sym="JUSJOKEN-4892811">
+    <Branch Name="else" Sym="JUSJOKEN-4892812">
+     <Conditional Name="Widg2 = FindWidgetBySymbol(&quot;JUSJOKEN-4891604&quot;)" Sym="JUSJOKEN-4892815">
+      <Branch Name="else" Sym="JUSJOKEN-4892816">
+       <Action Name="AddWidgetChild(Widg1, Widg2)" Sym="JUSJOKEN-4892819"/>
+      </Branch>
+      <Branch Name="null" Sym="JUSJOKEN-4892817">
+       <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891604 \&quot;NewNum &gt;=13 &amp;&amp; NewNum &lt;=23\&quot; could not add as child; parent symbol=JUSJOKEN-4891611 \&quot;SetProperty(\&quot;WIcons/DayEndHour\&quot;, NewNum * 1)\&quot;&quot;)" Sym="JUSJOKEN-4892818"/>
+      </Branch>
+     </Conditional>
+    </Branch>
+    <Branch Name="null" Sym="JUSJOKEN-4892813">
+     <Action Name="DebugLog(&quot;PATCH ERROR Missing Widget - Symbol=JUSJOKEN-4891611 \&quot;NewNum &gt;=13 &amp;&amp; NewNum &lt;=23\&quot; missing parent; could not add child with symbol=JUSJOKEN-4891604 \&quot;SetProperty(\&quot;WIcons/DayEndHour\&quot;, NewNum * 1)\&quot;&quot;)" Sym="JUSJOKEN-4892814"/>
+    </Branch>
+   </Conditional>
+  </Action>
+  <Action Name="&quot;REM Repositioning of child Widgets&quot;" Sym="JUSJOKEN-4892424"/>
+  <Action Name="ReturnValue = &quot;AutoCleanupSTVImportedHook&quot;" Sym="JUSJOKEN-4892820"/>
+ </Hook>
+ <OptionsMenu Name="Select Day Start/End Hours" Sym="JUSJOKEN-4891591">
+  <IgnoreThemeProps>false</IgnoreThemeProps>
+ </OptionsMenu>
+ <Action Name="&quot;REM Set the weather report units&quot;" Sym="JUSJOKEN-4891527"/>
+ <Action Name="&quot;\n \n&quot;" Sym="JUSJOKEN-4891537"/>
+ <Action Name="Refresh()" Sym="JUSJOKEN-4891549"/>
+ <Action Name="Title = DialogTitle" Sym="JUSJOKEN-4891561"/>
+ <Action Name="SetProperty(&quot;WIcons/DayStartHour&quot;, NewNum * 1)" Sym="JUSJOKEN-4891574"/>
+ <Action Name="&quot;Set the Start and End Hours for the Day Icons to show:\n \n&quot;" Sym="JUSJOKEN-4891589"/>
+ <Action Name="GetProperty(&quot;WIcons/DayStartHour&quot;, 7) * 1" Sym="JUSJOKEN-4891596"/>
+ <Action Name="NewNum = GetProperty(&quot;WIcons/DayStartHour&quot;, 7) * 1" Sym="JUSJOKEN-4891597"/>
+ <Action Name="CloseOptionsMenu()" Sym="JUSJOKEN-4891599"/>
+ <Action Name="SetProperty(&quot;WIcons/DayEndHour&quot;, NewNum * 1)" Sym="JUSJOKEN-4891604"/>
+ <Action Name="Title = DialogTitle" Sym="JUSJOKEN-4891605"/>
+ <Action Name="NewNum = GetProperty(&quot;WIcons/DayEndHour&quot;, 19) * 1" Sym="JUSJOKEN-4891606"/>
+ <Action Name="Refresh()" Sym="JUSJOKEN-4891608"/>
+ <Action Name="GetProperty(&quot;WIcons/DayEndHour&quot;, 19) * 1" Sym="JUSJOKEN-4891610"/>
+ <Conditional Name="NewNum &gt;=1 &amp;&amp; NewNum &lt;=11" Sym="JUSJOKEN-4891562"/>
+ <Conditional Name="NewNum &gt;=13 &amp;&amp; NewNum &lt;=23" Sym="JUSJOKEN-4891611"/>
+ <Branch Name="&quot;XHours&quot;" Sym="JUSJOKEN-4891535"/>
+ <Item Name="Configure the weather Day Start/End Hours" Sym="JUSJOKEN-4891525"/>
+ <Item Name="DayStart" Sym="JUSJOKEN-4891573">
+  <IgnoreThemeProps>false</IgnoreThemeProps>
+  <BackgroundComponent>false</BackgroundComponent>
+ </Item>
+ <Item Name="Close" Sym="JUSJOKEN-4891582"/>
+ <Item Name="DayEnd" Sym="JUSJOKEN-4891602">
+  <IgnoreThemeProps>false</IgnoreThemeProps>
+  <BackgroundComponent>false</BackgroundComponent>
+ </Item>
+ <Text Name="Configure the start and end hours for the Day/Night Icons" Sym="JUSJOKEN-4891536"/>
+ <Text Name="" Sym="JUSJOKEN-4891551"/>
+ <Text Name="" Sym="JUSJOKEN-4891564"/>
+ <Text Name="Day Start Hour" Sym="JUSJOKEN-4891577">
+  <AnchorX>0.0</AnchorX>
+  <FixedWidth>0.7</FixedWidth>
+  <AutosizeText>false</AutosizeText>
+  <WrapText>true</WrapText>
+  <TextShadow>true</TextShadow>
+  <DisableFontScaling>false</DisableFontScaling>
+  <IgnoreThemeProps>false</IgnoreThemeProps>
+ </Text>
+ <Text Name="" Sym="JUSJOKEN-4891600"/>
+ <Text Name="Day End Hour" Sym="JUSJOKEN-4891603">
+  <AnchorX>0.0</AnchorX>
+  <FixedWidth>0.7</FixedWidth>
+  <AutosizeText>false</AutosizeText>
+  <WrapText>true</WrapText>
+  <TextShadow>true</TextShadow>
+  <DisableFontScaling>false</DisableFontScaling>
+  <IgnoreThemeProps>false</IgnoreThemeProps>
+ </Text>
+ <Text Name="" Sym="JUSJOKEN-4891609"/>
+ <Attribute Name="OptionSetting" Sym="JUSJOKEN-4891526">
+  <Value>"XHours"</Value>
+ </Attribute>
+ <Attribute Name="DialogTitle" Sym="JUSJOKEN-4891541">
+  <Value>"Enter the Hour for the Start of the Day (1-11):"</Value>
+ </Attribute>
+ <Attribute Name="DialogTitle" Sym="JUSJOKEN-4891601">
+  <Value>"Enter the Hour for the End of the Day (13-23):"</Value>
+ </Attribute>
+ <Panel Name="DayStart" Sym="JUSJOKEN-4891575">
+  <FixedWidth>1.0</FixedWidth>
+  <PadX>.02</PadX>
+  <PadY>.02</PadY>
+  <Insets>.02</Insets>
+  <WrapHNav>false</WrapHNav>
+  <WrapVNav>false</WrapVNav>
+  <IgnoreThemeProps>false</IgnoreThemeProps>
+ </Panel>
+ <Panel Name="DayEnd" Sym="JUSJOKEN-4891607">
+  <FixedWidth>1.0</FixedWidth>
+  <PadX>.02</PadX>
+  <PadY>.02</PadY>
+  <Insets>.02</Insets>
+  <WrapHNav>false</WrapHNav>
+  <WrapVNav>false</WrapVNav>
+  <IgnoreThemeProps>false</IgnoreThemeProps>
+ </Panel>
+</Module>
